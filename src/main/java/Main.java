@@ -13,6 +13,12 @@ public class Main {
                 "7. Airbus_A320\n" +
                 "8. Airbus_А320NEO\n>_");
         int numberModelAircraft = new Scanner(System.in).nextInt();
-        System.out.println(airport.getCountAircraftSpecifiedModel(numberModelAircraft));
+        System.out.println("Количество самолетов указанной модели: " + airport.getCountAircraftSpecifiedModel(numberModelAircraft));
+
+        System.out.println("Информация о всех полосах: ");
+        airport.printListLanesForAircraft();
+
+        System.out.println("Вывод количества припаркованных самолетов на каждой полосе: " +
+        airport.findCountParkedAircraftByEveryLane());
     }
 }
