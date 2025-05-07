@@ -1,4 +1,4 @@
-public enum AircraftModel {
+public enum AircraftModels {
     Boeing_777_300ER,
     Boeing_737_800,
     Airbus_A350_900,
